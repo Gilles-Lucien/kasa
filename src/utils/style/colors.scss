@@ -1,0 +1,10 @@
+$background: #F6F6F6 !default;
+$primary: #FF6060 !default;
+$secondary: #000000 !default;
+
+// Export the variables
+:export {
+    background: $background;
+    primary: $primary;
+    secondary: $secondary;
+}

@@ -1,0 +1,23 @@
+@import "../../utils/style/colors.scss";
+
+footer {
+  background-color: $secondary;
+  color: #ffffff;
+  flex-shrink: 0;
+  width: 100%;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 66px;
+    img {
+      margin-bottom: 30px;
+    }
+  }
+}

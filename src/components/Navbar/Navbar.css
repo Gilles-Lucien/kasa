@@ -1,0 +1,33 @@
+:export {
+  background: #F6F6F6;
+  primary: #FF6060;
+  secondary: #000000;
+}
+
+.header {
+  display: flex;
+  height: 68px;
+  max-width: 1320px;
+  padding-left: 40px;
+  padding-right: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header__link {
+  margin-left: 60px;
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+}
+.header__link:hover {
+  color: #FF6060;
+}
+.header__link__underlined {
+  text-decoration: underline;
+}/*# sourceMappingURL=Navbar.css.map */

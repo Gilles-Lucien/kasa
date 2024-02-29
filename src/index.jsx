@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Single from "./pages/Single";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,7 +22,6 @@ root.render(
       </Routes>
       <Footer />
     </Router>
-    <Home />
   </React.StrictMode>
 );
 

@@ -1,0 +1,30 @@
+@import "../../utils/style/colors.scss";
+
+.header {
+  display: flex;
+//   margin: 0 auto 0 auto;
+  height: 68px;
+  max-width: 1320px;
+  padding-left: 40px;
+  padding-right: 40px;
+  justify-content: space-between;
+  align-items: center;
+  &__links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__link {
+    margin-left: 60px;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: $secondary;
+    text-decoration: none;
+    &:hover {
+      color: $primary;
+    }
+    &__underlined {
+      text-decoration: underline;
+    }
+  }
+}

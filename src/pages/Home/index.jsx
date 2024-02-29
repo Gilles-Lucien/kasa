@@ -1,12 +1,12 @@
 
 
 
-function App() {
+function Home() {
   return (
-    <div >
-<p>Hello world </p>
-    </div>
+    <div>
+<h1>Accueil</h1>
+      </div>
   );
 }
 
-export default App;
+export default Home;
