@@ -1,11 +1,11 @@
-
-
+import React from "react";
+import Banner from "../../components/Banner";
 
 function Home() {
   return (
-    <div>
-<h1>Accueil</h1>
-      </div>
+    <main>
+      <Banner/>
+    </main>
   );
 }
 

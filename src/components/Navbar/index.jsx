@@ -3,6 +3,10 @@ import Logo from "../../assets/LOGO.png";
 import "./Navbar.css";
 import { useEffect } from "react";
 
+// Notes : utiliser le hook useNavLink pour gérer l'effet d'underline
+// voir la doc react router dom 
+
+
 function Navbar() {
   // Add an event listener to each link in the header to underline the active link
   useEffect(() => {
