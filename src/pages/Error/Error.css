@@ -1,0 +1,49 @@
+:export {
+  background: #F6F6F6;
+  primary: #FF6060;
+  secondary: #000000;
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 55vh;
+  width: 100%;
+}
+.errorContainer h1 {
+  font-size: 18em;
+  font-weight: 700;
+  color: #FF6060;
+  text-align: center;
+  padding: 0 1rem;
+}
+@media screen and (max-width: 400px) {
+  .errorContainer h1 {
+    font-size: 6em;
+  }
+}
+.errorContainer p {
+  font-size: 2.2em;
+  font-weight: 500;
+  color: #FF6060;
+  text-align: center;
+}
+@media screen and (max-width: 400px) {
+  .errorContainer p {
+    font-size: 1.2em;
+    margin: 0 1rem;
+  }
+}
+.errorContainer a {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: underline;
+}
+@media screen and (max-width: 400px) {
+  .errorContainer a {
+    font-size: 0.9em;
+  }
+}/*# sourceMappingURL=Error.css.map */

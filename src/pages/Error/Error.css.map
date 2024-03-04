@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../utils/style/colors.scss","Error.scss"],"names":[],"mappings":"AAKA;EACI,YANS;EAOT,SANM;EAON,WANQ;;;ACAZ;EACE;EACA;EACA;EACA;EACA;EACA;;AACA;EACE;EACA;EACA,ODXM;ECYN;EACA;;AACA;EANF;IAOI;;;AAGJ;EACE;EACA;EACA,ODrBM;ECsBN;;AACA;EALF;IAMI;IACA;;;AAGJ;EACE;EACA;EACA,OD9BQ;EC+BR;;AACA;EALF;IAMI","file":"Error.css"}

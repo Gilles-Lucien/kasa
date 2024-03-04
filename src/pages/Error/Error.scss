@@ -1,0 +1,39 @@
+@import "../../utils/style/colors.scss";
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 55vh;
+  width: 100%;
+  & h1 {
+    font-size: 18em;
+    font-weight: 700;
+    color: $primary;
+    text-align: center;
+    padding: 0 1rem;
+    @media screen and (max-width: 400px) {
+      font-size: 6em;
+    }
+  }
+  & p {
+    font-size: 2.2em;
+    font-weight: 500;
+    color: $primary;
+    text-align: center;
+    @media screen and (max-width: 400px) {
+      font-size: 1.2em;
+      margin: 0 1rem;
+    }
+  }
+  & a {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: $secondary;
+    text-decoration: underline;
+    @media screen and (max-width: 400px) {
+      font-size: 0.9em;
+    }
+  }
+}
