@@ -2,9 +2,9 @@
 
 .header {
   display: flex;
-//   margin: 0 auto 0 auto;
+  //   margin: 0 auto 0 auto;
   height: 68px;
-  max-width: 1320px;
+  // max-width: 1320px;
   padding-left: 40px;
   padding-right: 40px;
   justify-content: space-between;
@@ -15,6 +15,7 @@
     justify-content: flex-start;
     align-items: center;
   }
+
   &__link {
     margin-left: 60px;
     font-size: 1.3em;
@@ -24,8 +25,10 @@
     &:hover {
       color: $primary;
     }
-    &__underlined {
-      text-decoration: underline;
-    }
+
   }
+}
+
+a.active {
+  text-decoration: underline;
 }

@@ -7,7 +7,6 @@
 .header {
   display: flex;
   height: 68px;
-  max-width: 1320px;
   padding-left: 40px;
   padding-right: 40px;
   justify-content: space-between;
@@ -29,6 +28,7 @@
 .header__link:hover {
   color: #FF6060;
 }
-.header__link__underlined {
+
+a.active {
   text-decoration: underline;
 }/*# sourceMappingURL=Navbar.css.map */
