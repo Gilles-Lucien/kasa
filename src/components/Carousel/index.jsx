@@ -1,16 +1,15 @@
 import React, { useState } from "react";
+import "./Carrousel.css";
 
 function Carousel({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = pictures;
-  console.log("images", images);
 
   const handleImageClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
   };
 
   return (
-    <div className="carousel">
+    <div className="carrousel">
       {pictures.map((imageUrl, index) => (
         // eslint-disable-next-line jsx-a11y/img-redundant-alt
         <img
@@ -18,7 +17,7 @@ function Carousel({ pictures }) {
           src={imageUrl}
           alt={`photo ${index + 1}`}
           onClick={handleImageClick}
-          style={{ display: index === currentIndex ? "block" : "none" }}
+          style={{ display: index === currentIndex ? "flex" : "none" }}
         />
       ))}
     </div>
