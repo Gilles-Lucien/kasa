@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { userParams } from "react-router-dom";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
 import About from "./pages/About";
@@ -18,7 +17,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/single/:logementid" element={<Single />} />
+        <Route path="/single/:id" element={<Single />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

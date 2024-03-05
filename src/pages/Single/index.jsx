@@ -1,16 +1,21 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import Carrousel from "../../components/Carousel";
+import Logements from "../../datas/logements.json";
+
+const data = Logements;
 
 
-
-function Single () {
+function Single() {
   const { id } = useParams();
-  const { logementIdParsed } = parseInt(id);
-  console.log(logementIdParsed);
+  const logement = data.find((item) => item.id === id);
+  console.log('objet logement récupéré via useParams depuis Single', logement);
+
   return (
-    <div>
-      <h1>Single</h1>
-    </div>
+    <main>
+      <h1>Single {id}</h1>
+      <Carrousel pictures={logement.pictures}/>
+    </main>
   );
 }
 

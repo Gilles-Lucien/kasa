@@ -5,7 +5,7 @@ import "./Cards.css";
 
 const data = Logements;
 
-const Cards = ({ item }) => {
+const Cards = () => {
   // const [data, setData] = useState([]);
 
   //     useEffect(() => {
