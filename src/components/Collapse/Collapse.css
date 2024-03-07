@@ -37,11 +37,13 @@
   animation-duration: 300ms;
 }
 .collapse__content {
-  display: none;
+  display: flex;
   color: #000000;
   padding: 20px;
   background-color: #F6F6F6;
   border-radius: 0 0 5px 5px;
+  height: auto;
+  transition: height 0.35s ease;
 }
 .collapse__content ul {
   list-style: none;
@@ -55,6 +57,7 @@
 .collapse__content.collapsing {
   position: relative;
   height: 0;
+  padding: 0;
   overflow: hidden;
   transition: height 0.35s ease;
 }/*# sourceMappingURL=Collapse.css.map */

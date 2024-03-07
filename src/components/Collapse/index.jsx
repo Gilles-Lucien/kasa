@@ -9,6 +9,7 @@ function Collapse(props) {
 function handleCollapseClick(e) {
     const collapse = e.target.closest(".collapse").querySelector(".collapse__content");
     collapse.classList.toggle("show");
+    collapse.classList.toggle("collapsing");
     e.target.querySelector("img").classList.toggle("rotate");
   }
 
