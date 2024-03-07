@@ -29,11 +29,12 @@
   height: 32px;
   transform: rotate(0deg) translateY(-50%);
   flex-shrink: 0;
-  animation-timing-function: ease-out;
-  animation-duration: 300ms;
 }
 .collapse__title img.rotate {
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(50%);
+  transform-origin: center;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
 }
 .collapse__content {
   display: none;
