@@ -2,4 +2,12 @@
   background: #F6F6F6;
   primary: #FF6060;
   secondary: #000000;
+}
+
+.collapseContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 76px;
+  width: 100%;
 }/*# sourceMappingURL=Single.css.map */

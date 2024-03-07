@@ -1,0 +1,59 @@
+:export {
+  background: #F6F6F6;
+  primary: #FF6060;
+  secondary: #000000;
+}
+
+.collapse {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+  width: 50%;
+  margin-bottom: 50px;
+}
+.collapse__title {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #FF6060;
+}
+.collapse__title img {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  transform: rotate(0deg) translateY(-50%);
+  flex-shrink: 0;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+}
+.collapse__title img.rotate {
+  transform: rotate(180deg);
+}
+.collapse__content {
+  display: none;
+  color: #000000;
+  padding: 20px;
+  background-color: #F6F6F6;
+  border-radius: 0 0 5px 5px;
+}
+.collapse__content ul {
+  list-style: none;
+}
+.collapse__content ul li {
+  margin-bottom: 4px;
+}
+.collapse__content.show {
+  display: flex;
+}
+.collapse__content.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}/*# sourceMappingURL=Collapse.css.map */

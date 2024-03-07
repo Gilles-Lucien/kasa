@@ -1,26 +1,21 @@
-// import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Logements from "../../datas/logements.json";
+import fetchData from "../../services/callAPI.js";
+// import Logements from "../../datas/logements.json";
 import "./Cards.css";
 
-const data = Logements;
+// const data = Logements;
 
 const Cards = () => {
-  // const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
 
-  //     useEffect(() => {
-  //         const fetchData = async () => {
-  //             try {
-  //                 const response = await fetch("../../datas/logements.json");
-  //                 const jsonData = await response.json();
-  //                 setData(jsonData);
-  //             } catch (error) {
-  //                 console.error("Error fetching data:", error);
-  //             }
-  //         };
-  // console.log(data);
-  //         fetchData();
-  //     }, []);
+  useEffect(() => {
+    const result = fetchData();
+    result.then((data) => {
+      console.log(data);
+      setData(data);
+    });
+  }, []);
 
   return (
     <div className="gridContainer">
