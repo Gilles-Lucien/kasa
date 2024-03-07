@@ -12,13 +12,14 @@ const data = Logements;
 function Single() {
   const { id } = useParams();
   const logement = data.find((item) => item.id === id);
-  console.log("objet logement récupéré via useParams depuis Single", logement);
+  // console.log("objet logement récupéré via useParams depuis Single", logement);
 
   return (
     <main>
       <Carrousel pictures={logement.pictures} />
       <InformationsSingle logement={logement} />
-      <Collapse logement={logement} />
+      <Collapse data={logement.description} />
+      <Collapse data={logement.equipments} />
     </main>
   );
 }
