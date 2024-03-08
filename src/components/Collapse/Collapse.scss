@@ -2,6 +2,7 @@
 
 .collapse {
   display: flex;
+  position: relative;
   flex-direction: column;
   position: relative;
   color: #fff;
@@ -28,41 +29,37 @@
       height: 32px;
       transform: rotate(0deg) translateY(-50%);
       flex-shrink: 0;
-
+      transition: rotate 0.8s ease-in-out, translateY 0.8s ease-in-out;
       &.rotate {
+        transition-delay: 0.2s; ///
         transform: rotate(180deg) translateY(50%);
         transform-origin: center;
-        animation-timing-function: ease-out;
-        animation-duration: 300ms;
       }
     }
   }
   &__content {
     display: flex;
     color: $secondary;
-    padding: 20px;
     background-color: $background;
     border-radius: 0 0 5px 5px;
-    height: auto;
-    transition: height 0.35s ease;
-    @media screen and (max-width: 400px){
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    @media screen and (max-width: 400px) {
       font-size: 13px;
+    }
+    & p {
+      margin: 20px;
     }
     & ul {
       list-style: none;
+      margin: 20px;
       & li {
         margin-bottom: 4px;
       }
     }
     &.show {
-      display: flex;
-    }
-    &.collapsing {
-      position: relative;
-      height: 0;
-      padding: 0;
-      overflow: hidden;
-      transition: height 0.35s ease;
+      max-height: 100vh;
     }
   }
 }

@@ -6,13 +6,12 @@ import arrowCollapse from "../../assets/arrowCollapse.svg";
 function Collapse(props) {
   console.log("props :", props);
 
-function handleCollapseClick(e) {
+  function handleCollapseClick(e) {
     const collapse = e.target.closest(".collapse").querySelector(".collapse__content");
     collapse.classList.toggle("show");
-    collapse.classList.toggle("collapsing");
-    e.target.querySelector("img").classList.toggle("rotate");
+    const arrow = e.target.closest(".collapse").querySelector("img");
+    arrow.classList.toggle("rotate");
   }
-
 
   return (
     <>
@@ -29,7 +28,7 @@ function handleCollapseClick(e) {
                   <li key={index}>{item}</li>
                 ))}
               </ul>
-            </div> 
+            </div>
           ) : (
             <div className="collapse__content">
               <p>{props[key]}</p>

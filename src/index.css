@@ -36,6 +36,9 @@ main {
   }
 }
 
+h2 {
+  font-size: 18px;
+}
 @media screen and (max-width: 400px) {
   h2 {
     font-size: 13px;

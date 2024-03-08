@@ -6,6 +6,7 @@
 
 .collapse {
   display: flex;
+  position: relative;
   flex-direction: column;
   position: relative;
   color: #fff;
@@ -36,40 +37,37 @@
   height: 32px;
   transform: rotate(0deg) translateY(-50%);
   flex-shrink: 0;
+  transition: rotate 0.8s ease-in-out, translateY 0.8s ease-in-out;
 }
 .collapse__title img.rotate {
+  transition-delay: 0.2s;
   transform: rotate(180deg) translateY(50%);
   transform-origin: center;
-  animation-timing-function: ease-out;
-  animation-duration: 300ms;
 }
 .collapse__content {
   display: flex;
   color: #000000;
-  padding: 20px;
   background-color: #F6F6F6;
   border-radius: 0 0 5px 5px;
-  height: auto;
-  transition: height 0.35s ease;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
 }
 @media screen and (max-width: 400px) {
   .collapse__content {
     font-size: 13px;
   }
 }
+.collapse__content p {
+  margin: 20px;
+}
 .collapse__content ul {
   list-style: none;
+  margin: 20px;
 }
 .collapse__content ul li {
   margin-bottom: 4px;
 }
 .collapse__content.show {
-  display: flex;
-}
-.collapse__content.collapsing {
-  position: relative;
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-  transition: height 0.35s ease;
+  max-height: 100vh;
 }/*# sourceMappingURL=Collapse.css.map */
