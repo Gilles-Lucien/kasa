@@ -9,8 +9,14 @@
   flex-direction: column;
   position: relative;
   color: #fff;
-  width: 50%;
+  width: 80%;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 400px) {
+  .collapse {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .collapse__title {
   display: flex;
