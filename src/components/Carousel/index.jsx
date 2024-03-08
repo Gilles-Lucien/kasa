@@ -23,13 +23,13 @@ function Carousel({ pictures }) {
           <img
             src={leftArrow}
             alt="left arrow"
-            className="leftArrow"
+            className="carrousel__arrow carrousel__arrow--left"
             onClick={handleArrowClickLeft}
           />
           <img
             src={rightArrow}
             alt="right arrow"
-            className="rightArrow"
+            className="carrousel__arrow carrousel__arrow--right"
             onClick={handleArrowClickRight}
           />
 

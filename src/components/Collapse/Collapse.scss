@@ -17,6 +17,7 @@
     align-items: center;
     padding: 10px 15px;
     border-radius: 5px;
+    font-size: 18px;
     cursor: pointer;
     background-color: $primary;
     & img {
@@ -44,6 +45,9 @@
     border-radius: 0 0 5px 5px;
     height: auto;
     transition: height 0.35s ease;
+    @media screen and (max-width: 400px){
+      font-size: 13px;
+    }
     & ul {
       list-style: none;
       & li {

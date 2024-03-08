@@ -27,9 +27,7 @@
   font-weight: 500;
   color: #fff;
 }
-
-.leftArrow,
-.rightArrow {
+.carrousel__arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -41,19 +39,26 @@
   cursor: pointer;
   z-index: 2;
 }
+.carrousel__arrow--left {
+  left: 23px;
+}
 @media screen and (max-width: 400px) {
-  .leftArrow,
-  .rightArrow {
+  .carrousel__arrow--left {
+    left: 10px;
+  }
+}
+.carrousel__arrow--right {
+  right: 23px;
+}
+@media screen and (max-width: 400px) {
+  .carrousel__arrow--right {
+    right: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .carrousel__arrow {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
   }
-}
-
-.leftArrow {
-  left: 23px;
-}
-
-.rightArrow {
-  right: 23px;
 }/*# sourceMappingURL=Carrousel.css.map */

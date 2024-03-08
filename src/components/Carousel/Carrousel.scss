@@ -24,31 +24,35 @@
     font-weight: 500;
     color: #fff;
   }
-}
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 47px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    &--left {
+      left: 23px;
+      @media screen and (max-width: 400px) {
+        left: 10px;
+      }
+    }
+    &--right {
+      right: 23px;
+      @media screen and (max-width: 400px) {
+        right: 10px;
+      }
 
-.leftArrow,
-.rightArrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 47px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 2;
-  @media screen and (max-width: 400px) {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
+      
+    }
+    @media screen and (max-width: 400px) {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
   }
-}
-
-.leftArrow {
-  left: 23px;
-}
-
-.rightArrow {
-  right: 23px;
 }
