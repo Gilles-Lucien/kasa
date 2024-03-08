@@ -1,10 +1,8 @@
 import React from "react";
-import { useEffect } from "react";
 import "./Collapse.css";
 import arrowCollapse from "../../assets/arrowCollapse.svg";
 
 function Collapse(props) {
-  console.log("props :", props);
 
   function handleCollapseClick(e) {
     const collapse = e.target.closest(".collapse").querySelector(".collapse__content");

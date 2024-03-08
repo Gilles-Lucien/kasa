@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import fetchData from "../../services/callAPI.js";
-// import Logements from "../../datas/logements.json";
 import "./Cards.css";
 
-// const data = Logements;
 
 const Cards = () => {
   const [data, setData] = useState([]);
@@ -12,7 +10,6 @@ const Cards = () => {
   useEffect(() => {
     const result = fetchData();
     result.then((data) => {
-      console.log(data);
       setData(data);
     });
   }, []);

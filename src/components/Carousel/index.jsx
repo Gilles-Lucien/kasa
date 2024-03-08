@@ -40,7 +40,6 @@ function Carousel({ pictures }) {
       )}
 
       {pictures.map((imageUrl, index) => (
-        // eslint-disable-next-line jsx-a11y/img-redundant-alt
         <img
           key={index}
           src={imageUrl}
