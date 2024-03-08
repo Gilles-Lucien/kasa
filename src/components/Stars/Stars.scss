@@ -10,4 +10,8 @@
 
 .star {
   height: 25px;
+  @media screen and (max-width: 400px) {
+    height: 15px;
+    
+  }
 }

@@ -1,75 +1,113 @@
 @import "../../utils/style/colors.scss";
 
 .profilPic {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  @media screen and (max-width: 400px) {
+    width: 32px;
+    height: 32px;
+    
   }
-
-  .tags {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    &__tag {
-      margin-right: 10px;
-      font-size: 12px;
-      color: #fff;
-      background-color: $primary;
-      padding: 5px 20px;
-      border-radius: 25px;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 700;
-      text-align: center;
-      cursor: default;
+}
+.tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  &__tag {
+    margin-right: 10px;
+    font-size: 12px;
+    color: #fff;
+    background-color: $primary;
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    cursor: default;
+    @media screen and (max-width: 400px) {
+      font-size: 10px;
+      border-radius: 10px;
+      padding: 2px 10px;
     }
   }
-
-  
+}
 
 .singleInfoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 24px;
+  width: 100%;
+  @media screen and (max-width: 400px) {
+    flex-direction: column;
+  }
+  & h1 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    color: $primary;
+    margin-bottom: 5px;
+    @media screen and (max-width: 400px) {
+      font-size: 18px;
+    }
+  }
+  & p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    color: $secondary;
+    margin-bottom: 20px;
+    @media screen and (max-width: 400px) {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+  &__right {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 24px;
-    width: 100%;
-    & h1 {
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 500;
-        color: $primary;
-        margin-bottom: 5px;
+    justify-content: flex-end;
+    @media screen and (max-width: 400px) {
+      margin-top: 16px;
     }
-    & p {
+    &__wrap {
+        @media screen and (max-width: 400px){
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 100%;
+            
+        }
+      }
+    &__host {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 20px;
+        @media screen and (max-width: 400px) {
+            margin-bottom: 0;
+
+        }
+      & p {
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
-        color: $secondary;
-        margin-bottom: 20px;
-    }
-    &__right {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        &__host {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
-            margin-bottom: 20px;
-            & p {
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 500;
-                color: $primary;
-                margin-right: 10px;
-                text-align: end;
-            }
+        color: $primary;
+        margin-right: 10px;
+        text-align: end;
+        @media screen and (max-width: 400px) {
+          font-size: 12px;
+          margin-bottom: 0;
         }
+      }
     }
+  }
 }

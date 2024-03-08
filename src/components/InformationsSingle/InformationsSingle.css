@@ -10,11 +10,18 @@
   border-radius: 50%;
   object-fit: cover;
 }
+@media screen and (max-width: 400px) {
+  .profilPic {
+    width: 32px;
+    height: 32px;
+  }
+}
 
 .tags {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -32,6 +39,13 @@
   text-align: center;
   cursor: default;
 }
+@media screen and (max-width: 400px) {
+  .tags__tag {
+    font-size: 10px;
+    border-radius: 10px;
+    padding: 2px 10px;
+  }
+}
 
 .singleInfoContainer {
   display: flex;
@@ -41,12 +55,22 @@
   margin-bottom: 24px;
   width: 100%;
 }
+@media screen and (max-width: 400px) {
+  .singleInfoContainer {
+    flex-direction: column;
+  }
+}
 .singleInfoContainer h1 {
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
   color: #FF6060;
   margin-bottom: 5px;
+}
+@media screen and (max-width: 400px) {
+  .singleInfoContainer h1 {
+    font-size: 18px;
+  }
 }
 .singleInfoContainer p {
   font-size: 18px;
@@ -55,10 +79,29 @@
   color: #000000;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 400px) {
+  .singleInfoContainer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
 .singleInfoContainer__right {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+@media screen and (max-width: 400px) {
+  .singleInfoContainer__right {
+    margin-top: 16px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .singleInfoContainer__right__wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 .singleInfoContainer__right__host {
   display: flex;
@@ -67,6 +110,11 @@
   align-items: center;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 400px) {
+  .singleInfoContainer__right__host {
+    margin-bottom: 0;
+  }
+}
 .singleInfoContainer__right__host p {
   font-size: 18px;
   font-style: normal;
@@ -74,4 +122,10 @@
   color: #FF6060;
   margin-right: 10px;
   text-align: end;
+}
+@media screen and (max-width: 400px) {
+  .singleInfoContainer__right__host p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=InformationsSingle.css.map */

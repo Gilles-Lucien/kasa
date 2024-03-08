@@ -6,54 +6,79 @@
 
 .collapse {
   display: flex;
+  position: relative;
   flex-direction: column;
   position: relative;
   color: #fff;
-  width: 50%;
+  width: 80%;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 400px) {
+  .collapse {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .collapse__title {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   position: relative;
   align-items: center;
   padding: 10px 15px;
   border-radius: 5px;
+  font-size: 18px;
   cursor: pointer;
   background-color: #FF6060;
 }
 .collapse__title img {
-  position: absolute;
-  right: 15px;
-  top: 50%;
   width: 32px;
   height: 32px;
-  transform: rotate(0deg) translateY(-50%);
+  transform: rotate(0deg) translateY(0%);
   flex-shrink: 0;
-  animation-timing-function: ease-out;
-  animation-duration: 300ms;
+  transition: rotate 0.8s ease-in-out, translateY 0.8s ease-in-out;
+}
+@media screen and (max-width: 400px) {
+  .collapse__title img {
+    width: 20px;
+    height: 20px;
+  }
 }
 .collapse__title img.rotate {
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(0%);
+  transition: transform 0.2s ease-in-out;
+}
+.collapse__title img.rotateRetro {
+  transform: rotate(0deg) translateY(0%);
+  transition: transform 0.2s ease-in-out;
 }
 .collapse__content {
-  display: none;
+  display: flex;
   color: #000000;
-  padding: 20px;
   background-color: #F6F6F6;
   border-radius: 0 0 5px 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
+}
+@media screen and (max-width: 400px) {
+  .collapse__content {
+    font-size: 13px;
+  }
+}
+.collapse__content p {
+  margin: 20px;
 }
 .collapse__content ul {
   list-style: none;
+  margin: 20px;
 }
 .collapse__content ul li {
   margin-bottom: 4px;
 }
 .collapse__content.show {
-  display: flex;
+  max-height: 100vh;
 }
-.collapse__content.collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  transition: height 0.35s ease;
+.collapse__content.hide {
+  max-height: 0vh;
 }/*# sourceMappingURL=Collapse.css.map */
